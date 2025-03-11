@@ -1,0 +1,1 @@
+/home/sanjeev/Documents/DEVONE/YetnotherApp/android/app/build/intermediates/cxx/RelWithDebInfo/1r4t5x4o/obj/arm64-v8a
