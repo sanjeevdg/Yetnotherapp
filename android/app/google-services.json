@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "562775885736",
+    "project_id": "yetanotherapp-c08f3",
+    "storage_bucket": "yetanotherapp-c08f3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562775885736:android:84eaa395d121cb070a3f9d",
+        "android_client_info": {
+          "package_name": "com.yetnotherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562775885736-clicfg6s5o9tldpabd78ju25mmtqcslt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yetnotherapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "562775885736-mbvn25envr1311lm6m1182tk02v2364q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkHD8GxQQHx2nWD-kK0wHc1NMbJ23y3Dk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562775885736-mbvn25envr1311lm6m1182tk02v2364q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,149 @@
+Variant: debug
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+Variant: release
+Config: release
+Store: /home/sanjeev/Documents/DEVONE/YetnotherApp/android/app/yetnotherapp.keystore
+Alias: yetnotherpp
+MD5: 9D:DB:E9:9B:8E:22:65:3C:D6:0B:45:8C:0F:8B:1C:2F
+SHA1: 8C:71:22:F0:D4:46:7F:14:5C:41:89:4E:1D:67:67:42:0E:C8:EA:E3
+SHA-256: 4D:95:2D:C0:EA:F1:48:B6:13:12:68:59:21:13:46:E8:73:26:A8:E8:EC:71:D9:85:97:AC:45:90:00:A0:23:5E
+Valid until: Wednesday, 24 April, 2052
+----------
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-async-storage_async-storage:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-firebase_app:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-firebase_auth:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-gesture-handler:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-google-signin_google-signin:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-lottie-splash-screen:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-reanimated:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-safe-area-context:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-screens:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-vector-icons:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+
+> Task :react-native-webview:signingReport
+Variant: debugAndroidTest
+Config: debug
+Store: /home/sanjeev/.android/debug.keystore
+Alias: AndroidDebugKey
+MD5: DD:8B:E9:99:13:90:B6:4D:C8:F6:72:BE:98:68:1E:C2
+SHA1: 27:44:C1:5C:75:BC:05:6C:9E:29:C9:C6:44:7C:EB:0B:11:33:90:99
+SHA-256: EF:E3:79:26:F9:1D:7E:7D:AD:D1:3E:8A:86:02:D7:57:5B:A3:18:2C:9E:ED:9F:B4:BA:A2:B0:82:ED:AE:F9:F1
+Valid until: Friday, 20 November, 2054
+----------
+a

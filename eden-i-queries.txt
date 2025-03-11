@@ -1,0 +1,68 @@
+const queryAiBot = async () => {
+
+       
+        try { 
+
+const url = `https://api.edenai.run/v2/workflow/08436c72-755c-45e2-ac57-059911144753/execution/` ;
+            let payload = {prompt:searchTerm}
+
+            let options = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json', 
+                'accept': 'application/json' ,
+                'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOWM0NDlmMTUtMjJjOC00MDU3LTliMTItYzI3YzY5MjBmYmQ3IiwidHlwZSI6ImFwaV90b2tlbiJ9.ccB8fx1ddnqm4tRsJW9un3si2r5BHqmLYaSwIF5edsg'
+            },
+            body:JSON.stringify(payload)
+          }
+            console.log('two');
+
+            const response = await fetch(url,options);
+            const result = await response.json();
+
+            setFlag(true);
+            setRid(result.id);
+          //  fetchExecResult(result.id);
+console.log('aichatbot11111111==>',result.id);
+
+        } catch (error) {
+            console.log(error);
+            alert("Please Try Again! Some Error Occurred at your side");
+        }
+
+}
+
+
+const fetchExecResult = async (rid) => {
+
+try {
+let options2 = {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json', 
+                'accept': 'application/json' ,
+                'authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOWM0NDlmMTUtMjJjOC00MDU3LTliMTItYzI3YzY5MjBmYmQ3IiwidHlwZSI6ImFwaV90b2tlbiJ9.ccB8fx1ddnqm4tRsJW9un3si2r5BHqmLYaSwIF5edsg'
+            }}
+const url2 = `https://api.edenai.run/v2/workflow/08436c72-755c-45e2-ac57-059911144753/execution/`+ rid +`/`
+
+                const response2 = await fetch(url2,options2);
+            const result2 = await response2.json();
+
+
+         //   const responseObject = JSON.parse(result);
+           console.log('aichatbot==>',JSON.stringify(result2));
+         //   setMovieItems(result.Search);
+        } catch (error) {
+            console.log(error);
+            alert("Please Try Again! Some Error Occurred at your side");
+        }
+
+setRid('');
+setFlag(false);
+
+
+
+}
+
+
+

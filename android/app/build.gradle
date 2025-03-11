@@ -1,8 +1,13 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
+apply plugin: 'com.google.gms.google-services'
+apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
+googleServices.disableVersionCheck = true
 
 /**
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+
  * This is the configuration block to customize your React Native Android app.
  * By default you don't need to apply any configuration, just uncomment the lines you need.
  */
@@ -82,37 +87,46 @@ android {
         applicationId "com.yetnotherapp"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
-        versionName "1.0"
+        versionCode 5
+        versionName "5.0"
     }
     signingConfigs {
-        debug {
+         debug {
             storeFile file('debug.keystore')
             storePassword 'android'
             keyAlias 'androiddebugkey'
             keyPassword 'android'
-        }
-    }
+        } 
+        /*release {
+            storeFile file('yetnotherapp.keystore')
+            storePassword 'yetnotherapp'
+            keyAlias 'yetnotherpp'
+            keyPassword 'yetnotherapp'
+        }*/
+   }
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
         }
-        release {
+       /* release {
             // Caution! In production, you need to generate your own keystore file.
             // see https://reactnative.dev/docs/signed-apk-android.
-            signingConfig signingConfigs.debug
+            debuggable false
+            signingConfig signingConfigs.release
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-        }
+        }  */
     }
 }
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
+implementation(platform("com.google.firebase:firebase-bom:33.6.0"))
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
+       implementation project(':react-native-lottie-splash-screen')
     } else {
         implementation jscFlavor
     }

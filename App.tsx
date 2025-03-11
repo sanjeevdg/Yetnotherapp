@@ -1,118 +1,85 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, { useState,useEffect } from 'react';
 
-import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import LottieSplashScreen from "react-native-lottie-splash-screen";
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
+import AppNavigation from './src/nav/AppNavigation';
 
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
 
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+import auth from '@react-native-firebase/auth';
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+//import { PersistGate } from 'redux-persist/integration/react';
+import { store } from './src/redux/store';
+//import { useSelector, useDispatch } from 'react-redux';
+//import { setUser } from './src/redux/actions';
+import { Provider } from 'react-redux';
+import { DefaultTheme } from '@react-navigation/native';
+import {LogBox,Dimensions} from 'react-native';
+
+const App = () => {
+
+
+  useEffect(() => {
+    LottieSplashScreen.hide();
+    LogBox.ignoreAllLogs();
+  }, []);
+
+
+//
+//clicked? styles.pullHigher:'',, clicked?styles.bgTransparent:'']
+//,clicked?styles.bgTransparent:''
+// injectedJavaScript={}       setLoading(true);
+const [initializing, setInitializing] = useState(true);
+  const [user, setUser] = useState();
+//const { user } = useSelector(state => state.user.userInfo);
+// const dispatch = useDispatch();
+/*
+const handleSetUser = user => {
+    setUser(user);
   };
+*/
+const theme = {
+  ...DefaultTheme,  
+     colors
+: {
+    ...DefaultTheme.colors,    
+    background: 'rgb(241 245 249)',
+  },
+  dark:true,
+}
+/*
+function onAuthStateChanged(user) {
+    setUser(user);
+    console.log('aaaaaaaaa-my-user-in-app>>>',user);
+    if (initializing) setInitializing(false);
+  }
+*/
+ 
+
+
+
+/*
+
+<PersistGate loading={null} persistor={persistor}>
+
+</PersistGate>
+
+*/
+
 
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-}
 
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+ 
+      
+<Provider store={store}>
+
+<AppNavigation/>
+
+</Provider>
+
+
+
+  );
+};
 
 export default App;
